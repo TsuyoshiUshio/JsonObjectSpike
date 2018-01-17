@@ -38,6 +38,14 @@ namespace JsonParseSample
             }
 
             Console.ReadLine();
+
+            Console.WriteLine("Simple Serialize------");
+            var result = JsonConvert.SerializeObject(new JObject { ["instanceId"] = "abc" });
+            Console.WriteLine(result);
+            Console.WriteLine("Simple Deserialize -----");
+            var newresult = JsonConvert.DeserializeObject<JObject>(result);
+            Console.WriteLine(newresult["instanceId"]);
+            Console.ReadLine();
            }
     }
 }
