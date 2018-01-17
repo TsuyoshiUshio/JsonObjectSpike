@@ -9,6 +9,9 @@ namespace JsonParseSample
 {
     class Program
     {
+        // reference
+        // https://www.newtonsoft.com/json/help/html/linqtojson.htm
+        // https://netweblog.wordpress.com/2016/10/24/json-net-newtonsoft-json-usage/
         static void Main(string[] args)
         {
 
